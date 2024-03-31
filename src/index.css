@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Sokcho";
+  src: url('./fonts/SokchoBadaDotum.ttf');
+}
+
+@font-face {
+  font-family: "SokchoLight";
+  src: url('./fonts/SokchoBadaBatang.ttf');
+}
+
+
+html{
+  scroll-snap-type: y mandatory;
+}
+
+*{
+  box-sizing: border-box;
+  /* font-family: "SokchoLight"; */
+}
