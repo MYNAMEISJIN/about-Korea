@@ -1,24 +1,24 @@
 
 export const Navigation = () => {
   return (
-    <div className="h-screen fixed right-0 flex flex-col justify-between pt-5 pr-4 pb-4">
+    <div className="h-screen fixed right-0 flex flex-col justify-between pt-5 pr-4 pb-4 max-md:hidden">
       <a href="mailto:s.jinnn.park@gmail.com" className=" underline underline-offset-4">
         s.jinnn.park@gmail.com
       </a>
       <div className=" font-SokchoLight flex flex-col items-end text-lg">
-        <div>
-          <div className="hover:font-bold">
+        <div className="flex flex-col">
+          <a href="#spring" className="hover:font-bold transition-all">
             #spring
-          </div>
-          <div className=" hover:font-bold">
+          </a>
+          <a href="#summer" className=" hover:font-bold">
             #summer
-          </div>
-          <div className=" hover:font-bold">
+          </a>
+          <a href="#autumn" className=" hover:font-bold">
             #autumn
-          </div>
-          <div className=" hover:font-bold">
+          </a>
+          <a href="#winter" className=" hover:font-bold">
             #winter
-          </div>
+          </a>
         </div>
       </div>
     </div>

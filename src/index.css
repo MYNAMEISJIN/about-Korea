@@ -15,9 +15,16 @@
 
 html{
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 *{
   box-sizing: border-box;
   /* font-family: "SokchoLight"; */
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  html{
+    scroll-snap-type: none;
+  }
 }

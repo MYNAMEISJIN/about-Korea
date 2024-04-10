@@ -1,11 +1,11 @@
 import { ImageContainer } from "./ui/ImageContainer"
+import { SeasonTranslations } from "../pages/home/Home"
 
-export const Winter:React.FC<{bgColor:string}> = (props) => {
-
-
+export const Winter:React.FC<{bgColor:string, sLan:SeasonTranslations}> = (props) => {
+console.log(props.bgColor)
     return (
         <div className="h-screen w-full flex flex-col justify-center items-center gap-4">
-            <ImageContainer title={"winter"} />
+            <ImageContainer title={"winter"} sLan={props.sLan} bgColor={props.bgColor}  imageUrl={"https://img.freepik.com/free-photo/baekyangsa-temple-and-falling-snow-naejangsan-mountain-in-winter-with-snow-famous-mountain-in-korea-winter-landscape_335224-439.jpg"}/>
             <div className="font-SokchoLight font-extrabold flex flex-col">
                 <div className="flex flex-col justify-center items-center gap-3">
                     <div>
@@ -17,10 +17,10 @@ export const Winter:React.FC<{bgColor:string}> = (props) => {
 
                     <div className="text-sm">
                         <div>
-                            #cherry blossom
+                            #Lunar New Year
                         </div>
                         <div>
-                            #something to represent
+                            #tteokguk
                         </div>
                     </div>
                 </div>
